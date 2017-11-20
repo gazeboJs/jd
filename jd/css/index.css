@@ -1,0 +1,339 @@
+/* 初始化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+header {
+  padding: 5px 50px 5px 70px;
+  background-color: rgba(201, 21, 35, 0);
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+header a {
+  position: absolute;
+  top: 0;
+}
+header .ssk {
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+header .ssk::after {
+  display: block;
+  content: "";
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -60px -110px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+header .ssk input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-indent: 30px;
+}
+header .logo {
+  left: 0;
+  width: 70px;
+  height: 40px;
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: 0 -110px;
+  background-origin: content-box;
+  background-clip: content-box;
+  padding: 7px 6px;
+}
+header .login {
+  right: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  width: 50px;
+}
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel-ul {
+  width: 1000%;
+}
+.carousel .carousel-ul li {
+  float: left;
+  width: 10%;
+}
+.carousel .indexer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+}
+.carousel .indexer li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  margin-left: 5px;
+}
+.carousel .indexer .active {
+  background-color: #FFFFFF;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  padding: 5px 5px;
+  font-size: 14px;
+  color: dimgray;
+}
+nav ul li a img {
+  width: 50%;
+  margin: 0 auto;
+}
+.hand-skill {
+  padding: 2px;
+}
+.hand-skill .top-skill {
+  line-height: 40px;
+}
+.hand-skill .top-skill .clock {
+  display: inline-block;
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -282px -309px;
+  width: 20px;
+  height: 22px;
+  margin-left: 10px;
+}
+.hand-skill .top-skill .kill-font {
+  color: #c91523;
+}
+.hand-skill .top-skill .timer {
+  display: inline-block;
+  font-size: 0;
+}
+.hand-skill .top-skill .timer span {
+  background-color: #000;
+  color: #FFFFFF;
+  padding: 0 2px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.hand-skill .top-skill .timer span:nth-child(3n) {
+  background: #FFFFFF;
+  color: #000000;
+}
+.hand-skill .top-skill a {
+  float: right;
+}
+.hand-skill .kill-content ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.hand-skill .kill-content ul li a {
+  position: relative;
+}
+.hand-skill .kill-content ul li a .hot-sell {
+  background-color: darkorange;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 6px 7px;
+  font-size: 14px;
+  position: absolute;
+  top: 60%;
+  right: 5%;
+}
+.hand-skill .kill-content ul li a .new-price {
+  display: block;
+  color: #c91523;
+}
+.hand-skill .kill-content ul li a del {
+  display: block;
+  color: #696969;
+}
+.jd-618 .jd-618-title {
+  position: relative;
+}
+.jd-618 .jd-618-title > ul {
+  position: absolute;
+  bottom: 5px;
+}
+.jd-618 .jd-618-title > ul li {
+  float: left;
+  width: 50%;
+}
+.jd-618 .jd-618-title > ul li > a {
+  padding: 0 3px;
+}
+.jd-618 .jd-618-content ul li {
+  float: left;
+  width: 50%;
+}
+.jd-618 .jd-618-content ul li:nth-child(-n+3) {
+  width: 33.33%;
+}
+.adv a {
+  padding: 5px;
+}
+.goods-title {
+  color: #c91523;
+  padding: 5px 10px;
+}
+.market .market-content ul li {
+  float: left;
+  width: 50%;
+}
+.market .market-content ul li:nth-child(4) {
+  clear: both;
+}
+.theme .theme-content ul li {
+  float: left;
+  width: 25%;
+}
+.theme .theme-content ul li:nth-child(-n+2) {
+  width: 50%;
+}
+.theme .theme-content ul li:nth-child(5) {
+  clear: both;
+}
+.brand ul li {
+  float: left;
+  width: 30%;
+  padding: 0 2px;
+}
+.brand ul li:first-child {
+  width: 40%;
+}
+.guess .guess-title h4 a {
+  float: right;
+  font-weight: normal;
+  font-size: 14px;
+}
+.guess .guess-title h4 a img {
+  width: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.guess .guess-content ul li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.guess .guess-content ul li .item-title span {
+  color: #c91523;
+}
+.guess .guess-content ul li .item-title a {
+  float: right;
+  border: 1px solid #CCCCCC;
+  color: #666;
+  font-size: 14px;
+}
+.guess .guess-content ul li .item-content img {
+  width: 90%;
+  margin: 0 auto;
+}
+.guess .guess-content ul li .item-content p {
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCCCCC;
+}
+.bottom-tool {
+  background-color: #FFFFFF;
+  color: #666666;
+  text-align: center;
+  font-size: 14px;
+}
+.bottom-tool .more {
+  padding: 10px 0;
+  border-top: 1px solid #CCCCCC;
+}
+.bottom-tool .bottom-link {
+  padding: 10px 0;
+  border-top: 1px solid #CCCCCC;
+}
+.bottom-tool .bottom-link a {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #000;
+}
+.bottom-tool .bottom-link a:last-child {
+  border-right: none;
+}
+.bottom-tool .devices {
+  border-top: 1px solid #CCCCCC;
+  padding: 10px 0;
+}
+.bottom-tool .devices a {
+  float: left;
+  width: 33.33%;
+}
+.bottom-tool .devices a span {
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -120px -67px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.bottom-tool .devices a .s1 {
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -40px -67px;
+}
+.bottom-tool .devices a .s2 {
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -79px -67px;
+}
+.bottom-tool .copyright {
+  border-top: 1px solid #CCCCCC;
+  padding: 10px 0;
+}
+.margin-bottom {
+  visibility: hidden;
+}
+.margin-bottom img {
+  width: 25%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  float: left;
+  width: 20%;
+}
